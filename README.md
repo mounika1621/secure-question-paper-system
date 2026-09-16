@@ -45,42 +45,38 @@ Install the following:
 ```bash
 git clone https://github.com/mounika1621/secure-question-paper-system.git
 cd secure-question-paper-system
+```
 ### Step 2: Install Dependencies
+```bash
 npm install
+```
 ### Step 3: Configure Supabase
-
+```bash
 Create a Supabase project.
-
 Open the Supabase SQL Editor and run:
-
 supabase/schema.sql
-
 This creates the required database tables and security policies.
-
 Create a private Supabase Storage bucket named:
-
 question-papers
+```
 ### Step 4: Configure Environment Variables
-
+```bash
 Create a file named .env in the project root folder.
+```
 ### Step 5: Generate Encryption Key
-
+```bash
 Run: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-
+```
 ### Step 6: Create Demo Users
-
+```bash
 Question Setter:node scripts/create-user.js "Question Setter" setter@example.com Setter@123 setter
-
 Reviewer:node scripts/create-user.js "Reviewer" reviewer@example.com Reviewer@123 reviewer
-
 Administrator:node scripts/create-user.js "Administrator" admin@example.com Admin@123 admin
-
 Examination Controller:node scripts/create-user.js "Exam Controller" controller@example.com Controller@123 controller
-
-Step 7: Start the Application
-
+```
+### Step 7: Start the Application
+```bash
 Run:npm start
-
 The application will start at:http://localhost:3000
 
 5. Project Structure
@@ -119,6 +115,7 @@ secure-question-paper-system/
 ├── package-lock.json
 ├── README.md
 └── server.js
+
 6. Modules and Their Purpose
 server.js
 
@@ -234,3 +231,5 @@ SHA-256 integrity checking
 Private cloud storage
 Audit logging
 Time-based question paper release
+
+```
