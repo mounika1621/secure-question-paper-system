@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure Question Paper System</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Secure Question Paper Management</h1>
+    <p>Cloud-based examination paper security system</p>
+  </header>
+
+  <main>
+    <section id="loginCard" class="card">
+      <h2>Secure Login</h2>
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p id="loginMsg" class="msg"></p>
+      <small>Demo accounts are created by the administrator.</small>
+    </section>
+
+    <section id="app" class="hidden">
+      <div class="topbar">
+        <div>
+          <h2 id="welcome"></h2>
+          <span id="role"></span>
+        </div>
+        <button class="secondary" onclick="logout()">Logout</button>
+      </div>
+
+      <section class="grid">
+        <div class="card" id="uploadCard">
+          <h3>Upload Question Paper</h3>
+          <input id="title" placeholder="Paper title">
+          <input id="subject" placeholder="Subject">
+          <label>Exam date & time</label>
+          <input id="examDate" type="datetime-local">
+          <input id="paper" type="file" accept=".pdf,.docx">
+          <button onclick="uploadPaper()">Encrypt & Upload</button>
+          <p id="uploadMsg" class="msg"></p>
+        </div>
+
+        <div class="card">
+          <h3>Question Papers</h3>
+          <button class="secondary" onclick="loadPapers()">Refresh</button>
+          <div id="papers"></div>
+        </div>
+
+        <div class="card" id="auditCard">
+          <h3>Audit Logs</h3>
+          <button class="secondary" onclick="loadLogs()">Refresh Logs</button>
+          <div id="logs"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+<script src="/app.js"></script>
+</body>
+</html>
