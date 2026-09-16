@@ -45,9 +45,13 @@ Install the following:
 ```bash
 git clone https://github.com/mounika1621/secure-question-paper-system.git
 cd secure-question-paper-system
+<<<<<<< HEAD
 ```
 ### Step 2: Install Dependencies
 ```bash
+=======
+Step 2: Install Dependencies
+>>>>>>> d03a7f0 (Add project screenshots and update README)
 npm install
 ```
 ### Step 3: Configure Supabase
@@ -230,6 +234,27 @@ AES-256-GCM encryption
 SHA-256 integrity checking
 Private cloud storage
 Audit logging
-Time-based question paper release
 
-```
+## 12. Screenshots
+
+### Login Page
+![Login Page](screenshots/01.png)
+
+### Question Paper Upload
+![Question Paper Upload](screenshots/02.png)
+
+### Reviewer Approval
+![Reviewer Approval](screenshots/03.png)
+
+### Controller Access Blocked
+![Controller Access Blocked](screenshots/04-controller.png)
+
+### Administrator Dashboard
+![Administrator Dashboard](screenshots/05-admin.png)
+
+### Audit Logs
+![Audit Logs](screenshots/06-audit.png)
+![Audit Logs1](screenshots/06-audit1.png)
+
+### Encryption and Integrity
+![Encryption and Integrity](screenshots/07-encrypt.png)
