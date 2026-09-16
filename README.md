@@ -47,5 +47,5 @@ Install:
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/mounika1621/secure-question-paper-system.git
 cd secure-question-paper-system
