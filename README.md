@@ -234,7 +234,7 @@ AES-256-GCM encryption
 SHA-256 integrity checking
 Private cloud storage
 Audit logging
-
+```
 ## 12. Screenshots
 
 ### Login Page
