@@ -258,3 +258,7 @@ Audit logging
 
 ### Encryption and Integrity
 ![Encryption and Integrity](screenshots/07-encrypt.png)
+
+## Live Demo
+
+[Open the Live Application](https://secure-question-paper-system-1.onrender.com)
